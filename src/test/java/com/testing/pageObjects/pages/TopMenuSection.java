@@ -13,10 +13,10 @@ import net.serenitybdd.core.pages.WebElementFacade;
 public class TopMenuSection extends BasePage {
   // Locators
   // -------------------------------------------------------------------------------------------------------------------
-  public static By ACCOUNT_BUTTON;
-  public static By LOGIN_BUTTON;
-  public static By SEARCH_ICON;
-  public static By SEARCH_FIELD;
+  public static By ACCOUNT_BUTTON = id("navbarAccount");
+  public static By LOGIN_BUTTON = id("navbarLoginButton");
+  public static By SEARCH_ICON = css("mat-search-bar[aria-label='Click to search']");
+  public static By SEARCH_FIELD = id("mat-input-0");
   public static By SHOPPING_CART_BUTTON;
   public static By CHOOSE_LANGUAGE_BUTTON;
   public static By LANGUAGE_LIST;
