@@ -24,9 +24,9 @@ public class HomePage extends TopMenuSection {
   public static By PRODUCT_INFO_PRICE = css("p.item-price");
   public static By PRODUCT_INFO_CLOSE = css("button[aria-label='Close Dialog']");
   public static By REVIEWS_EXPAND = ariaLabel("Expand for Reviews");
-  public static By COMMENT_SECTION = css("div[class='mat-expansion-panel-body ng-tns-c156-198']");
-  public static By REVIEW_TEXT_FIELD;
-  public static By SUBMIT_BUTTON;
+  public static By COMMENT_SECTION = xpath("//*[@id='cdk-accordion-child-0']/div/div");
+  public static By REVIEW_TEXT_FIELD = ariaLabel("Text field to review a product");
+  public static By SUBMIT_BUTTON = id("submitButton");
 
   // Public methods ----------------------------------------------------------------------------------------------------
   public void waitForPageToLoad() {

@@ -19,7 +19,6 @@ Feature: Juice Shop Actions
       | Lemon Juice (500ml)      | Sour but full of vitamins.         | 2.99  |
       | Strawberry Juice (500ml) | Sweet & tasty!                     | 3.99  |
 
-  @run
   Scenario: Find comment
     When I search for "King of the Hill"
     And  I "open item" with the following data:
@@ -28,7 +27,7 @@ Feature: Juice Shop Actions
     And  I click "Reviews expand"
     Then "Comment section" should contain "K33p5 y0ur ju1cy 5plu773r 70 y0ur53lf!"
 
-
+  @run
   Scenario: Add comment
     When I "log in" with the following data:
       | Email | Password |

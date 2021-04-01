@@ -13,7 +13,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class LoginPage extends HomePage {
   // Locators ----------------------------------------------------------------------------------------------------------
   public static By LOGIN_WITH_GOOGLE_BUTTON = id("loginButtonGoogle");
-  public static By NOT_YET_A_CUSTOMER;
+  public static By NOT_YET_A_CUSTOMER = css("a.primary-link");
   public static By REGISTRATION_COMPLETED_SUCCESSFULLY;
   public static By EMAIL_FIELD = id("email");
   public static By PASSWORD_FIELD = id("password");
