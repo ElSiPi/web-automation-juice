@@ -17,14 +17,14 @@ public class TopMenuSection extends BasePage {
   public static By LOGIN_BUTTON = id("navbarLoginButton");
   public static By SEARCH_ICON = css("mat-search-bar[aria-label='Click to search']");
   public static By SEARCH_FIELD = id("mat-input-0");
-  public static By SHOPPING_CART_BUTTON;
-  public static By CHOOSE_LANGUAGE_BUTTON;
-  public static By LANGUAGE_LIST;
-  public static By ORDERS_AND_PAYMENT_OPTION;
-  public static By PRIVACY_AND_SECURITY_OPTION;
-  public static By LOGOUT_BUTTON;
+  public static By SHOPPING_CART_BUTTON = ariaLabel("Show the shopping cart");
+  public static By CHOOSE_LANGUAGE_BUTTON = ariaLabel("Language selection menu");
+  public static By LANGUAGE_LIST = xpath("//*[@id='mat-menu-panel-1']/div/*"); //all children of element
+  public static By ORDERS_AND_PAYMENT_OPTION = xpath("//*[@id='mat-menu-panel-0']/div/button[2]/span");
+  public static By PRIVACY_AND_SECURITY_OPTION = xpath("//*[@id='mat-menu-panel-0']/div/button[3]/span");
+  public static By LOGOUT_BUTTON = id("navbarLogoutButton");
   public static By CHANGE_PASSWORD_BUTTON;
-  public static By DIGITAL_WALLET_OPTION;
+  public static By DIGITAL_WALLET_OPTION = ariaLabel("Go to wallet page");
 
   // Public methods
   // -------------------------------------------------------------------------------------------------------------------

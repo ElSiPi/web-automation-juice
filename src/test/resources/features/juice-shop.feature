@@ -27,7 +27,6 @@ Feature: Juice Shop Actions
     And  I click "Reviews expand"
     Then "Comment section" should contain "K33p5 y0ur ju1cy 5plu773r 70 y0ur53lf!"
 
-  @run
   Scenario: Add comment
     When I "log in" with the following data:
       | Email | Password |
@@ -75,6 +74,7 @@ Feature: Juice Shop Actions
     | Pусский     | Заказы и Оплата     | Конфиденциальность и безопасность | Выход         |
     | 日本の       | 注文と支払い          | プライバシーとセキュリテ              |  ログアウト     |
 
+  @run
   Scenario: Increase wallet balance
     When I "create an account" with the following data:
       | Email field  | Password field | Repeat Password field | Security Question | Security Answer field                                |
@@ -101,6 +101,7 @@ Feature: Juice Shop Actions
     And  I click "Continue button"
     Then "Wallet balance" should contain "999.00"
 
+
   Scenario: Change password
   When I "create an account" with the following data:
     | Email field  | Password field | Repeat Password field | Security Question | Security Answer field                                |
@@ -122,6 +123,7 @@ Feature: Juice Shop Actions
     | Email        | Password        |
     | RANDOM_EMAIL | SeriousHeadAche |
   Then I am on the "Home" page
+
 
   Scenario: Add new address
     When I "log in" with the following data:

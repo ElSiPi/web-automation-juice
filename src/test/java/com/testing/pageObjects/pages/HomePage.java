@@ -19,7 +19,7 @@ public class HomePage extends TopMenuSection {
   public static By ITEMS_PER_PAGE = css("mat-select[aria-label='Items per page:']");
   public static By OPTION_24 = id("mat-option-1");
   public static By BLOCK_NAME = css("div[class='item-name']");
-  public static By ADD_TO_BASKET_BUTTON;
+  public static By ADD_TO_BASKET_BUTTON = ariaLabel("Add to Basket");
   public static By PRODUCT_INFO_BLOCK = xpath("//mat-dialog-content/*[last()]");
   public static By PRODUCT_INFO_PRICE = css("p.item-price");
   public static By PRODUCT_INFO_CLOSE = css("button[aria-label='Close Dialog']");
