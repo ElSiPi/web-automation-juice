@@ -74,7 +74,7 @@ Feature: Juice Shop Actions
     | Pусский     | Заказы и Оплата     | Конфиденциальность и безопасность | Выход         |
     | 日本の       | 注文と支払い          | プライバシーとセキュリテ              |  ログアウト     |
 
-  @run
+
   Scenario: Increase wallet balance
     When I "create an account" with the following data:
       | Email field  | Password field | Repeat Password field | Security Question | Security Answer field                                |
@@ -124,7 +124,7 @@ Feature: Juice Shop Actions
     | RANDOM_EMAIL | SeriousHeadAche |
   Then I am on the "Home" page
 
-
+  @run
   Scenario: Add new address
     When I "log in" with the following data:
       | Email | Password |
