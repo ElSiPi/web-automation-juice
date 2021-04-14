@@ -14,7 +14,7 @@ public class BasketPage extends HomePage {
   // Locators
   // -------------------------------------------------------------------------------------------------------------------
   public static By YOUR_BASKET_TITLE = text("Your Basket");
-  public static By ROW_ITEMS;
+  public static By ROW_ITEMS = css("mat-row[class='mat-row cdk-row ng-star-inserted']");
   public static By CHECKOUT_BUTTON = id("checkoutButton");
   // Public methods
   // -------------------------------------------------------------------------------------------------------------------

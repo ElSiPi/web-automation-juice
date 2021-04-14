@@ -15,7 +15,7 @@ public class PaymentShopPage extends DeliveryMethodPage{
   // Locators
   // -------------------------------------------------------------------------------------------------------------------
   public static By MY_PAYMENT_OPTIONS_TITLE = text("My Payment Options");
-  public static By CONTINUE_BUTTON = id("submitButton") ;
+  public static By CONTINUE_BUTTON = ariaLabel("Proceed to review") ;
   public static By ADD_NEW_CARD_OPTION = css("mat-panel-title");
   public static By CARD_NAME_FIELD = id("mat-input-21");
   public static By CARD_NUMBER_FIELD = id("mat-input-22");

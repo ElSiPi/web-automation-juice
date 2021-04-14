@@ -17,10 +17,10 @@ public class RegisterPage extends TopMenuSection {
   public static By USER_REGISTRATION_TITLE = text("User Registration");
   public static By EMAIL_FIELD = css("input[id='emailControl']");
   public static By PASSWORD_FIELD = css("input[id='passwordControl']");
-  public static By REPEAT_PASSWORD_FIELD = css("input[id='repeatPasswordControl']");
+  public static By REPEAT_PASSWORD_FIELD = ariaLabel("Field to confirm the password");//css("input[id='repeatPasswordControl']");
   public static By SECURITY_QUESTION = css("div[id^='mat-select-value-']");//css("mat-select[name='securityQuestion']");
   public static By NAME_OF_FAVORITE_PET_OPTION = id("mat-option-6");
-  public static By SECURITY_QUESTION_LIST = ariaLabel("Selection list for the security question");
+  public static By SECURITY_QUESTION_LIST = css("div[role='listbox']");//ariaLabel("Selection list for the security question");
   public static By SECURITY_ANSWER_FIELD = css("input[id='securityAnswerControl']");
   public static By REGISTRATION_BUTTON = css("button[id='registerButton']");
 

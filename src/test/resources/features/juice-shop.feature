@@ -75,6 +75,7 @@ Feature: Juice Shop Actions
     | 日本の       | 注文と支払い          | プライバシーとセキュリテ              |  ログアウト     |
 
 
+
   Scenario: Increase wallet balance
     When I "create an account" with the following data:
       | Email field  | Password field | Repeat Password field | Security Question | Security Answer field                                |
@@ -101,7 +102,7 @@ Feature: Juice Shop Actions
     And  I click "Continue button"
     Then "Wallet balance" should contain "999.00"
 
-
+  @run
   Scenario: Change password
   When I "create an account" with the following data:
     | Email field  | Password field | Repeat Password field | Security Question | Security Answer field                                |
@@ -124,7 +125,6 @@ Feature: Juice Shop Actions
     | RANDOM_EMAIL | SeriousHeadAche |
   Then I am on the "Home" page
 
-  @run
   Scenario: Add new address
     When I "log in" with the following data:
       | Email | Password |

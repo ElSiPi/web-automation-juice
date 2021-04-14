@@ -11,7 +11,7 @@ public class ChangePasswordPage extends TopMenuSection {
   public static By NEW_PASSWORD_FIELD = css("input[id='newPassword']");
   public static By REPEAT_NEW_PASSWORD_FIELD = css("input[id='newPasswordRepeat']");
   public static By CHANGE_BUTTON = css("button[id='changeButton']");
-  public static By YOUR_PASSWORD_WAS_SUCCESSFULLY_CHANGED;
+  public static By YOUR_PASSWORD_WAS_SUCCESSFULLY_CHANGED = text("Your password was successfully changed.");
   // Public methods ----------------------------------------------------------------------------------------------------
   public void waitForPageToLoad() {
     getElement(CHANGE_PASSWORD_TITLE).waitUntilPresent();

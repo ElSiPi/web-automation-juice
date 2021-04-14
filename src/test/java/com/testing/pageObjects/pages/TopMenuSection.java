@@ -23,7 +23,7 @@ public class TopMenuSection extends BasePage {
   public static By ORDERS_AND_PAYMENT_OPTION = xpath("//*[@id='mat-menu-panel-0']/div/button[2]/span");
   public static By PRIVACY_AND_SECURITY_OPTION = xpath("//*[@id='mat-menu-panel-0']/div/button[3]/span");
   public static By LOGOUT_BUTTON = id("navbarLogoutButton");
-  public static By CHANGE_PASSWORD_BUTTON;
+  public static By CHANGE_PASSWORD_BUTTON = ariaLabel("Go to change password page");
   public static By DIGITAL_WALLET_OPTION = ariaLabel("Go to wallet page");
 
   // Public methods
